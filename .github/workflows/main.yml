@@ -32,8 +32,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Testing...."
-        
-  aws:
-    runs-on: amazon/aws-cli
-    steps:
-      - run: aws --version
