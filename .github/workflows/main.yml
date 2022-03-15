@@ -17,3 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Testing...."
+      
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying...."
+      - run: sleep 60
+      - run: echo "Successfully deployed...."
