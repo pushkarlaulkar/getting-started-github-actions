@@ -24,3 +24,14 @@ jobs:
       - run: echo "Deploying...."
       - run: sleep 60
       - run: echo "Successfully deployed...."
+
+      - uses: actions/checkout@v2
+
+      - run: mkdir -p path/to/artifact
+
+      - run: echo hello > path/to/artifact/world.txt
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: path/to/artifact/world.txt
